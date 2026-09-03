@@ -1,0 +1,4 @@
+model,n_val,n_test,ece_raw,ece_mimic_platt
+LR-10,1845.0,4307,0.1397,0.026
+RF-10,1845.0,4307,0.0224,0.015
+"GP (raw, zero-shot)",,4307,0.1239,

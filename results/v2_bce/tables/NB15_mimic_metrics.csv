@@ -1,0 +1,2 @@
+label,auroc,auprc,brier,brier_skill_pct,ece_10bin,cal_slope,cal_intercept,sensitivity,specificity,f1,fitness,threshold,n_patients,mortality_rate,ci_auroc_lo,ci_auroc_hi,ci_ece_lo,ci_ece_hi,ci_brier_lo,ci_brier_hi
+GP (c=24) MIMIC-IV zero-shot,0.7087,0.5257,0.1994,4.3,0.1245,0.8855,0.6418,0.6251,0.6693,0.5186,0.6464,0.1424,6152,0.2961638491547464,0.6939882352717492,0.7229654175423297,0.12148466637955084,0.1278695805558709,0.19594968696536416,0.20289681236971988

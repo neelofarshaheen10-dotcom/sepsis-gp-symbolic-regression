@@ -1,0 +1,59 @@
+consensus_rank,feature,group,shap_mean_abs,shap_rank,perm_mean,perm_std,perm_rank,avg_rank,gp_include,in_nb05_terminals,justification
+1,age_numeric,primary_continuous,0.33304712,1,0.011068982667154292,0.0020999536232477367,2,1.5,True,True,"continuous feature, consensus_rank=1"
+2,lactate_max,lab_feature,0.29483077,2,0.02207336732827201,0.007350334265896602,1,1.5,True,True,"continuous feature, consensus_rank=2"
+3,temperature,primary_continuous,0.23966622,3,0.009330696057806476,0.0025172241262575086,3,3.0,True,True,"continuous feature, consensus_rank=3"
+4,bun,primary_continuous,0.23089279,4,0.0064715197109666,0.004368985375079252,6,5.0,True,True,"continuous feature, consensus_rank=4"
+5,heartrate,primary_continuous,0.201178,8,0.006673459937802795,0.002871506385372873,5,6.5,True,True,"continuous feature, consensus_rank=5"
+6,map_mean,map_feature,0.21924485,5,0.00422402359828028,0.002140194006851985,9,7.0,True,True,"continuous feature, consensus_rank=6"
+7,platelets_min,lab_feature,0.20878991,6,0.006234993826031121,0.002842755958112919,8,7.0,True,True,"continuous feature, consensus_rank=7"
+8,albumin,primary_continuous,0.20541683,7,0.006337464556846073,0.001224201012806267,7,7.0,False,False,B6: 39.6% imputed at constant median — GP would capture artefact
+9,respiratoryrate,primary_continuous,0.1757574,9,0.0038347205707489175,0.0019975486394964424,10,9.5,True,True,"continuous feature, consensus_rank=9"
+10,vent,binary_flag,0.15033884,10,0.0035034414158966686,0.0037941542992117297,11,10.5,True,True,binary clinical flag — direct physiological relevance
+11,bilirubin,primary_continuous,0.097969756,18,0.0068310962224455984,0.0016562261900805377,4,11.0,True,True,"continuous feature, consensus_rank=11"
+12,pf_ratio,primary_continuous,0.14696778,11,0.0030636890606419278,0.0022849038731914285,13,12.0,True,True,"continuous feature, consensus_rank=12"
+13,gcs_total,primary_continuous,0.11753332,16,0.002834166056891807,0.0016927994264429383,14,15.0,True,True,"continuous feature, consensus_rank=13"
+14,hematocrit,primary_continuous,0.09748981,19,0.0032830650324703224,0.001020709183623356,12,15.5,True,True,"continuous feature, consensus_rank=14"
+15,sodium,primary_continuous,0.14241174,12,0.0017713001920788174,0.0005228943383654921,20,16.0,True,True,"continuous feature, consensus_rank=15"
+16,glucose,primary_continuous,0.11757718,15,0.0018762004939173239,0.0011506749645641438,19,17.0,True,True,"continuous feature, consensus_rank=16"
+17,wbc,primary_continuous,0.104048125,17,0.002250926095307615,0.001808125265117111,17,17.0,True,True,"continuous feature, consensus_rank=17"
+18,potassium_max,lab_feature,0.13530844,13,0.0009628247050213034,0.0029745736876636824,23,18.0,True,True,"continuous feature, consensus_rank=18"
+19,ph,primary_continuous,0.0673868,22,0.0024297139394492072,0.001250090651211691,15,18.5,True,True,"continuous feature, consensus_rank=19"
+20,meanbp,primary_continuous,0.07133135,21,0.0023598280435377485,0.0016053893312979676,16,18.5,True,True,"continuous feature, consensus_rank=20"
+21,dx_Sepsis_renal_UTI_including_bladder,dx_dummy,0.12068117,14,0.0008992271105824456,0.0008985069274199194,24,19.0,False,False,categorical/dummy — excluded from GP arithmetic
+22,creatinine,primary_continuous,0.085958906,20,0.0019300798042621414,0.0026218580936646463,18,19.0,True,True,"continuous feature, consensus_rank=22"
+23,dx_Sepsis_pulmonary,dx_dummy,0.06394244,23,0.0013451248513672298,0.0012054557431730641,21,22.0,False,False,categorical/dummy — excluded from GP arithmetic
+24,intubated,binary_flag,0.027378293,28,0.0013055371352783452,0.0011289873266146205,22,25.0,True,True,binary clinical flag — direct physiological relevance
+25,temperature_miss,mar_miss,0.022654993,30,0.0008217666697153736,0.0001538933309653684,25,27.5,False,False,categorical/dummy — excluded from GP arithmetic
+26,unit_Cardiac ICU,unit_dummy,0.027396994,27,0.0002686819720111755,0.0002695168850924406,29,28.0,False,False,categorical/dummy — excluded from GP arithmetic
+27,bilirubin_miss,mar_miss,0.045889378,26,0.00025939243574480965,0.00042743683240535,30,28.0,False,False,categorical/dummy — excluded from GP arithmetic
+28,pf_ratio_miss,mnar_miss,0.020469958,31,0.0008213379218876881,0.001055854443069382,26,28.5,True,True,MNAR: large mortality gap confirmed in NB03
+29,ph_miss,mar_miss,0.019604804,33,0.0007057189243572792,0.0013837365998482904,27,30.0,False,False,categorical/dummy — excluded from GP arithmetic
+30,unit_SICU,unit_dummy,0.012887726,36,0.0002439575139484229,0.0001693913281628625,31,33.5,False,False,categorical/dummy — excluded from GP arithmetic
+31,platelets_min_miss,mar_miss,0.007328954,41,0.00027582776913915864,0.00018489810479831233,28,34.5,False,False,categorical/dummy — excluded from GP arithmetic
+32,dialysis,binary_flag,0.019811837,32,1.1004527576918833e-05,0.00023072144563202813,39,35.5,True,True,binary clinical flag — direct physiological relevance
+33,dx_Sepsis_other,dx_dummy,0.01060351,37,2.329529863697166e-05,0.00018255356608457273,37,37.0,False,False,categorical/dummy — excluded from GP arithmetic
+34,glucose_miss,mar_miss,0.0049504987,43,0.00014677467300814318,0.00020940677710590245,33,38.0,False,False,categorical/dummy — excluded from GP arithmetic
+35,bun_miss,mar_miss,0.006095825,42,6.588424951963212e-05,0.00013783418405096477,35,38.5,False,False,categorical/dummy — excluded from GP arithmetic
+36,vasopressor_24h,binary_flag,0.059334803,24,-0.00023138091100355362,0.0007064196257926083,54,39.0,True,True,binary clinical flag — direct physiological relevance
+37,wbc_miss,mar_miss,0.004018085,47,0.00022595010518595694,0.0001388220023865027,32,39.5,False,False,categorical/dummy — excluded from GP arithmetic
+38,lactate_max_miss,mnar_miss,0.022923442,29,-0.00019179319491470227,0.0004929542741210682,52,40.5,True,True,MNAR: large mortality gap confirmed in NB03
+39,dx_Sepsis_cutaneous_soft_tissue,dx_dummy,0.01445728,34,-5.2593066861972294e-05,0.00018781003749866786,48,41.0,False,False,categorical/dummy — excluded from GP arithmetic
+40,unit_Med-Surg ICU,unit_dummy,0.04804873,25,-0.0004892012713804239,0.0003214770475723725,58,41.5,False,False,categorical/dummy — excluded from GP arithmetic
+41,unit_CTICU,unit_dummy,0.003185012,49,3.815855666313706e-05,2.7557588511196597e-05,36,42.5,False,False,categorical/dummy — excluded from GP arithmetic
+42,gender_male,binary_flag,0.013505075,35,-0.00018950653983369482,0.00039153866768636906,51,43.0,True,True,binary clinical flag — direct physiological relevance
+43,potassium_max_miss,mar_miss,0.0015208428,52,0.00011161735113860428,8.784030522326494e-05,34,43.0,False,False,categorical/dummy — excluded from GP arithmetic
+44,creatinine_miss,mar_miss,0.009124785,39,-0.00013334057440792524,0.00014150417738872923,49,44.0,False,False,categorical/dummy — excluded from GP arithmetic
+45,unit_CSICU,unit_dummy,0.0044575334,44,-2.7725692856650497e-05,4.2256742459929634e-05,46,45.0,False,False,categorical/dummy — excluded from GP arithmetic
+46,dx_Sepsis_unknown,dx_dummy,0.0041921227,45,-3.4299826215833386e-06,0.00018744252668623026,45,45.0,False,False,categorical/dummy — excluded from GP arithmetic
+47,gcs_total_miss,mar_miss,0.0041390504,46,-4.8877252355428166e-05,4.5741139934292115e-05,47,46.5,False,False,categorical/dummy — excluded from GP arithmetic
+48,unit_MICU,unit_dummy,0.009425307,38,-0.0003409974389464554,0.00024683796846879607,56,47.0,False,False,categorical/dummy — excluded from GP arithmetic
+49,dx_Sepsis_gynecologic,dx_dummy,0.0,54,0.0,0.0,40,47.0,False,False,categorical/dummy — excluded from GP arithmetic
+50,map_mean_miss,mar_miss,0.0,57,1.3148266715279355e-05,2.120556685150444e-05,38,47.5,False,False,categorical/dummy — excluded from GP arithmetic
+51,heartrate_miss,mar_miss,0.0,55,0.0,0.0,41,48.0,False,False,categorical/dummy — excluded from GP arithmetic
+52,albumin_miss,mar_miss,0.0076698703,40,-0.0003555748650875379,0.00021759561222918822,57,48.5,False,False,categorical/dummy — excluded from GP arithmetic
+53,respiratoryrate_miss,mar_miss,0.00033929572,53,-1.2862434832339176e-06,2.5922604081801187e-06,44,48.5,False,False,categorical/dummy — excluded from GP arithmetic
+54,sodium_miss,mar_miss,0.00391966,48,-0.00016964122381797343,0.00012452900101943227,50,49.0,False,False,categorical/dummy — excluded from GP arithmetic
+55,meanbp_miss,mar_miss,0.0,56,0.0,0.0,43,49.5,False,False,categorical/dummy — excluded from GP arithmetic
+56,gender_male_miss,mar_miss,0.0,58,0.0,0.0,42,50.0,False,False,categorical/dummy — excluded from GP arithmetic
+57,unit_Neuro ICU,unit_dummy,0.002012288,50,-0.00020294063843426802,0.00014535331262109741,53,51.5,False,False,categorical/dummy — excluded from GP arithmetic
+58,hematocrit_miss,mar_miss,0.0018852748,51,-0.00028325939815254664,0.0001244498372923076,55,53.0,False,False,categorical/dummy — excluded from GP arithmetic

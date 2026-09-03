@@ -1,0 +1,27 @@
+# Central path configuration. Edit this file to point at your own local data locations
+# before running any notebook. Nothing here is read from a fixed absolute path at import time.
+
+# Raw zips (read-only) — obtained via credentialed PhysioNet access, not included in this repo
+eicu_zip:    "/path/to/eicu-collaborative-research-database-2.0.zip"
+mimic_zip:   "/path/to/mimic-iv-3.1.zip"
+
+# Extracted CSVs (after Block 0 extraction step)
+eicu_dir:    "./data/raw/eicu"
+mimic_dir:   "./data/raw/mimic-iv"
+
+# Intermediate outputs
+interim_dir:   "./data/interim"
+processed_dir: "./data/processed"
+
+# Results — shared (NB01-09) outputs; NB10+ notebooks define their own versioned paths
+figures_dir: "./results/shared/figures"
+tables_dir:  "./results/shared/tables"
+
+# Cohort filter thresholds (per supervisor feedback)
+cohort:
+  min_icu_los_hours: 24
+  min_age: 18
+  sofa_threshold: 2
+  exclude_hospital_ids: [73]   # initially flagged; after Sepsis-3 filtering, hospital 73 lands in Medium tertile with normal mortality — retained in final cohort
+  min_hospital_patients: 100
+  min_hospital_deaths: 10

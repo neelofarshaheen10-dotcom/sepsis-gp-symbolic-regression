@@ -1,0 +1,38 @@
+name: sepsis-gp
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  # Core scientific stack
+  - numpy>=1.26
+  - pandas>=2.1
+  - scipy>=1.11
+  - pyarrow            # fast parquet I/O
+  # Visualisation
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  # ML
+  - scikit-learn>=1.4
+  - xgboost>=2.0
+  - lightgbm>=4.1
+  - imbalanced-learn   # for class imbalance experiments
+  # Jupyter / dev
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - tqdm
+  - black
+  - isort
+  # Stats / interpretability
+  - statsmodels
+  - sympy>=1.12        # symbolic math (PySR output)
+  - pyyaml
+  # Pip-only dependencies
+  - pip
+  - pip:
+      - pysr>=0.19          # Genetic Programming / symbolic regression
+      - cma>=3.3            # CMA-ES (recalibration)
+      - shap>=0.44          # XGBoost interpretability
+      - tableone>=0.8       # clinical Table 1
+      - missingno>=0.5      # missingness visualisation

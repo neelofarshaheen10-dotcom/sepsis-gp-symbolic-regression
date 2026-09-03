@@ -1,0 +1,30 @@
+column,dtype,role,planned_use,description
+patientunitstayid,int64,identifier,id,Primary key: one row per ICU stay
+patienthealthsystemstayid,int64,identifier,id,Groups ICU stays within the same hospital admission
+gender,str,demographic,predictor,Patient sex (Male / Female)
+age,str,demographic,predictor,Age at admission; '> 89' is HIPAA Safe Harbor anonymisation
+ethnicity,str,demographic,predictor,Self-reported ethnicity
+hospitalid,int64,identifier,id,Anonymous hospital identifier (used for hospital-out split)
+wardid,int64,identifier,drop,Anonymous ward identifier within hospital
+apacheadmissiondx,str,clinical,predictor,APACHE-defined admission diagnosis text
+admissionheight,float64,anthropometric,predictor,Height at admission (cm)
+hospitaladmittime24,str,temporal,drop,Time-of-day of hospital admission (low information)
+hospitaladmitoffset,int64,temporal,predictor,Minutes between hospital admission and ICU admission
+hospitaladmitsource,str,temporal,predictor,Source location at hospital admission
+hospitaldischargeyear,int64,temporal,drop,Year of hospital discharge (de-identification artefact)
+hospitaldischargetime24,str,temporal,drop,Time-of-day of hospital discharge (post-hoc)
+hospitaldischargeoffset,int64,temporal,drop,"Hospital LOS in minutes (post-hoc, label leakage)"
+hospitaldischargelocation,str,outcome,drop,Discharge disposition (post-hoc)
+hospitaldischargestatus,str,outcome,outcome,PRIMARY OUTCOME: hospital mortality (Alive / Expired)
+unittype,str,ICU,predictor,"ICU type (MICU, SICU, Med-Surg ICU, etc.)"
+unitadmittime24,str,temporal,drop,Time-of-day of ICU admission (low information)
+unitadmitsource,str,temporal,predictor,Source location at ICU admission
+unitvisitnumber,int64,ICU,predictor,Sequential ICU stay number within hospital admission
+unitstaytype,str,ICU,drop,admit / readmit / transfer (used as cohort filter)
+admissionweight,float64,anthropometric,predictor,Weight at admission (kg)
+dischargeweight,float64,anthropometric,drop,"Weight at discharge (post-hoc, not in first 24h)"
+unitdischargetime24,str,temporal,drop,Time-of-day of ICU discharge (post-hoc)
+unitdischargeoffset,int64,temporal,drop,"ICU LOS in minutes (post-hoc, used as filter only)"
+unitdischargelocation,str,outcome,drop,Location after ICU (post-hoc)
+unitdischargestatus,str,outcome,outcome,Secondary outcome: ICU mortality
+uniquepid,str,identifier,id,Unique patient identifier across hospitals

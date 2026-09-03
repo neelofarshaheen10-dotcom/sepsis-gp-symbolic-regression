@@ -1,0 +1,12 @@
+file,train_tertile,test_tertile,diagonal,train_hosps,val_hosps,test_hosps,train_patients,val_patients,test_patients,train_mort_pct,val_mort_pct,test_mort_pct
+split_random.csv,all,all,False,65,65,65,7814,1117,2233,16.88,16.92,16.88
+split_hospital_out.csv,all,all,False,52,0,13,9102,0,2062,16.52,,18.48
+LL.csv,Low,Low,True,16,0,6,2660,0,1205,11.24,,10.21
+LM.csv,Low,Med,False,22,0,21,3865,0,3662,10.92,,16.47
+LH.csv,Low,High,False,22,0,22,3865,0,3637,10.92,,23.65
+ML.csv,Med,Low,False,21,0,22,3662,0,3865,16.47,,10.92
+MM.csv,Med,Med,True,15,0,6,2941,0,721,16.66,,15.67
+MH.csv,Med,High,False,21,0,22,3662,0,3637,16.47,,23.65
+HL.csv,High,Low,False,22,0,22,3637,0,3865,23.65,,10.92
+HM.csv,High,Med,False,22,0,21,3637,0,3662,23.65,,16.47
+HH.csv,High,High,True,16,0,6,2913,0,724,24.1,,21.82

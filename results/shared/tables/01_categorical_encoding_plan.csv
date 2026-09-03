@@ -1,0 +1,4 @@
+column,n_unique_nonnull,planned_encoding,pysr_terminal,notes
+gender,4,"Binary: Male=1, Female=0; Other/Unknown/NaN treated as missing (NaN)","gender_male (float64, 0.0/1.0/NaN)",< 0.1% non-binary records; treated as missing rather than a third category
+ethnicity,6,"One-hot: 6 dummies (Caucasian as reference, omitted); missing row = all zeros","eth_afam, eth_hispanic, eth_asian, eth_nativeam, eth_other (float64, 0.0/1.0)",Decision to include or drop deferred to Block 3 based on terminal-budget analysis
+apacheadmissiondx,392,"Collapse to binary sepsis_dx flag (1 if sepsis-category string, else 0); cluster dummies optional","sepsis_dx (float64, 0.0/1.0)",High cardinality (~900 strings); full category mapping reviewed in Block 3 EDA

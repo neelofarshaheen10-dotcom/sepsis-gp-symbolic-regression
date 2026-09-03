@@ -1,0 +1,19 @@
+Variable,Value
+N (stays / patients),"11,164"
+Hospital mortality,"1,885 (16.9%)"
+"Age, median [IQR]",67 [56–78]
+Sex: Male,"5,699 (51.0%)"
+Sex: Female,"5,464 (48.9%)"
+Sex: Unknown,1 (0.0%)
+Unit type: Med-Surg ICU,"6,518 (58.4%)"
+Unit type: MICU,"1,886 (16.9%)"
+Unit type: Cardiac ICU,825 (7.4%)
+Unit type: CCU-CTICU,812 (7.3%)
+Unit type: SICU,526 (4.7%)
+Unit type: Neuro ICU,296 (2.7%)
+Unit type: CSICU,210 (1.9%)
+Unit type: CTICU,91 (0.8%)
+"ICU LOS (days), median [IQR]",2.8 [1.8–5.2]
+"Hospital LOS (days), median [IQR]",7.4 [4.6–12.3]
+"Hospitals, n",65
+"Per-hospital mortality (%), median [IQR]",16.7 [11.9–21.4]

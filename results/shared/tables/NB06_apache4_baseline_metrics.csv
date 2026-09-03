@@ -1,0 +1,2 @@
+model,n_patients,coverage_pct,auroc,auprc,brier,ece_10bin,cal_slope,cal_intercept,evaluation_set
+APACHE-IV,10265,91.95,0.7051,0.3771,0.133,0.0588,0.418,-0.9382,covered_patients_only

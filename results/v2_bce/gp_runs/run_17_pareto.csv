@@ -1,0 +1,23 @@
+label,auroc,auprc,brier,brier_skill_pct,ece_10bin,cal_slope,cal_intercept,sensitivity,specificity,f1,fitness,threshold,seed,complexity,train_loss,equation,is_selected
+GP_c1,0.5,0.1692,0.1406,-0.0,0.0004,-0.0098,-1.6066,0.0,1.0,0.0,0.4998,inf,17,1,0.453978,-1.5941626,False
+GP_c3,0.565,0.1972,0.139,1.1,0.0159,0.69,-0.4901,0.3122,0.8179,0.283,0.5571,0.3021,17,3,0.441777,intubated + -1.8371985,False
+GP_c4,0.6749,0.3707,0.1276,9.2,0.0226,0.891,-0.1972,0.4868,0.8039,0.3974,0.6636,0.2021,17,4,0.425294,log(lactate_max / gcs_total),False
+GP_c5,0.6737,0.3773,0.1269,9.7,0.0137,1.012,0.0018,0.5132,0.7511,0.3752,0.6669,0.1748,17,5,0.424839,(lactate_max + -9.450605) / potassium_max,False
+GP_c6,0.6898,0.3764,0.1273,9.4,0.0225,0.9403,-0.1327,0.6825,0.5927,0.3707,0.6785,0.1695,17,6,0.419514,(-11.368214 + lactate_max) / sqrt(bun),False
+GP_c7,0.696,0.379,0.1267,9.9,0.0165,1.0334,0.0414,0.709,0.5894,0.3807,0.6878,0.1472,17,7,0.418271,log(lactate_max * sqrt(bun)) + -4.1666465,False
+GP_c8,0.7066,0.3934,0.125,11.1,0.0158,0.9328,-0.0115,0.5926,0.7328,0.408,0.6987,0.1624,17,8,0.414502,log((lactate_max * (age_numeric / map_mean)) / gcs_total),False
+GP_c9,0.6981,0.3669,0.1276,9.3,0.0188,0.9123,-0.1372,0.619,0.6756,0.3855,0.6887,0.1511,17,9,0.412574,(sqrt(lactate_max) + (intubated + -7.6175003)) + log(age_numeric),False
+GP_c10,0.7137,0.3652,0.1269,9.8,0.0226,0.8928,-0.1609,0.6508,0.6703,0.3981,0.7024,0.1552,17,10,0.409108,(-2.4779477 + (age_numeric / (map_mean / sqrt(lactate_max)))) - pf_ratio_miss,False
+GP_c12,0.7247,0.383,0.1263,10.2,0.0261,0.8321,-0.2626,0.6825,0.6584,0.4063,0.7117,0.1513,17,12,0.406332,(intubated + (((age_numeric + bun) / map_mean) + sqrt(lactate_max))) - 4.93004,False
+GP_c13,0.7182,0.3662,0.1268,9.8,0.0153,0.993,-0.0299,0.6984,0.6412,0.4037,0.7105,0.1547,17,13,0.405308,(intubated + ((age_numeric / map_mean) + sqrt(sqrt(bun) + lactate_max))) + -5.6935,False
+GP_c14,0.7215,0.3716,0.1267,9.8,0.0304,0.8255,-0.2629,0.8307,0.514,0.394,0.7063,0.1142,17,14,0.404121,((((age_numeric / map_mean) * sqrt(lactate_max)) + -5.079648) + intubated) + log(sqrt(bun)),False
+GP_c15,0.7221,0.3861,0.1253,10.9,0.0085,1.001,-0.0084,0.6032,0.7284,0.4108,0.7178,0.1803,17,15,0.401804,(((respiratoryrate + age_numeric) / map_mean) + (sqrt(lactate_max + sqrt(bun)) - 6.119189)) + intubated,False
+GP_c16,0.731,0.3936,0.1244,11.5,0.0217,1.0146,-0.0756,0.5979,0.7468,0.4209,0.7202,0.1999,17,16,0.400612,intubated + (((age_numeric + respiratoryrate) / map_mean) + (sqrt(lactate_max + sqrt(bun)) - sqrt(temperature))),False
+GP_c17,0.7307,0.3869,0.1252,10.9,0.0187,0.9045,-0.1575,0.6243,0.7177,0.4148,0.7213,0.17,17,17,0.399225,(((age_numeric + respiratoryrate) / map_mean) + (sqrt(lactate_max + (bilirubin + sqrt(bun))) - 6.3205504)) + intubated,False
+GP_c18,0.7323,0.3889,0.1246,11.3,0.0146,0.9505,-0.0858,0.582,0.7737,0.4322,0.725,0.1973,17,18,0.397907,((age_numeric + respiratoryrate) / map_mean) + ((sqrt(lactate_max + sqrt(bun * sqrt(bilirubin))) - 6.087007) + intubated),False
+GP_c19,0.7406,0.3992,0.1238,11.9,0.0151,0.9623,-0.1199,0.6032,0.7543,0.4294,0.7331,0.1973,17,19,0.396531,(((age_numeric + respiratoryrate) / map_mean) + (sqrt(lactate_max + sqrt(bun * sqrt(bilirubin))) - sqrt(temperature))) + intubated,False
+GP_c20,0.7432,0.3967,0.1242,11.7,0.0254,0.9364,-0.1258,0.6667,0.7134,0.4337,0.7305,0.1712,17,20,0.396024,(sqrt(sqrt((vent + (bilirubin / exp(pf_ratio_miss))) * bun) + lactate_max) + ((respiratoryrate + age_numeric) / map_mean)) - 5.7519593,False
+GP_c21,0.7468,0.4154,0.1218,13.4,0.0182,1.0104,-0.0257,0.7037,0.6767,0.4277,0.7377,0.1534,17,21,0.395311,"(sqrt(sqrt(((bilirubin + vent) * bun) / log(gcs_total)) + lactate_max) + (age_numeric / map_mean)) - min(log(pf_ratio), 5.2693386)",False
+GP_c22,0.7456,0.4178,0.1215,13.6,0.0174,1.0088,-0.0511,0.545,0.8362,0.464,0.7369,0.2292,17,22,0.394652,"sqrt(sqrt(bun * ((bilirubin / 3.5100248) + max(intubated, vent))) + lactate_max) + ((age_numeric / map_mean) - min(5.275867, log(pf_ratio)))",False
+GP_c23,0.7491,0.4121,0.1221,13.2,0.024,0.9568,-0.1015,0.5132,0.8642,0.4709,0.7371,0.2473,17,23,0.393415,(((respiratoryrate + age_numeric) / map_mean) + sqrt(lactate_max + sqrt((vent + (bilirubin / exp(pf_ratio_miss))) * bun))) - log(pf_ratio + 122.11467),False
+GP_c24,0.7504,0.4331,0.12,14.7,0.0162,1.0451,0.0418,0.545,0.8481,0.4758,0.7423,0.2248,17,24,0.392965,"(sqrt(sqrt(((bilirubin / 3.9589555) + max(intubated, vent)) * bun) + lactate_max) - log(map_mean + pf_ratio)) + ((respiratoryrate + age_numeric) / map_mean)",True

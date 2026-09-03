@@ -1,0 +1,79 @@
+column,decision,reason,in_MODELLING_COLS,in_GP_TERMINALS,missingness_tier
+icu_los_days,DROPPED,leakage,False,False,—
+hospital_los_days,DROPPED,leakage,False,False,—
+icu_mortality,DROPPED,leakage,False,False,—
+ethnicity,DROPPED,raw_string,False,False,—
+apacheadmissiondx,DROPPED,raw_string,False,False,—
+uniquepid,DROPPED,redundant_id,False,False,—
+eyes_miss,DROPPED,B2_redundancy,False,False,—
+motor_miss,DROPPED,B2_redundancy,False,False,—
+verbal_miss,DROPPED,B2_redundancy,False,False,—
+pao2,DROPPED,B2_redundancy,False,False,—
+fio2_frac,DROPPED,B2_redundancy,False,False,—
+pao2_miss,DROPPED,B2_redundancy,False,False,—
+fio2_frac_miss,DROPPED,B2_redundancy,False,False,—
+map_min,DROPPED,B2_redundancy,False,False,—
+map_max,DROPPED,B2_redundancy,False,False,—
+map_min_miss,DROPPED,B2_redundancy,False,False,—
+map_max_miss,DROPPED,B2_redundancy,False,False,—
+patientunitstayid,METADATA,id_or_outcome,False,False,—
+hospitalid,METADATA,id_or_outcome,False,False,—
+hospital_mortality,METADATA,id_or_outcome,False,False,—
+age_numeric,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<1%
+heartrate,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+meanbp,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+respiratoryrate,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+temperature,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+pf_ratio,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,>50%
+wbc,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+creatinine,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+bilirubin,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,20-50%
+bun,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+glucose,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+sodium,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+ph,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,>50%
+hematocrit,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+albumin,KEPT,MODELLING_COLS (B6: excluded from GP),True,False,20-50%
+gcs_total,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+potassium_max,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+platelets_min,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+lactate_max,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,20-50%
+map_mean,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+gender_male,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<20%
+vent,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<1%
+intubated,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<1%
+dialysis,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<1%
+vasopressor_24h,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,<1%
+unit_CSICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_CTICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_Cardiac ICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_MICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_Med-Surg ICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_Neuro ICU,KEPT,MODELLING_COLS,True,False,<1%
+unit_SICU,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_cutaneous_soft_tissue,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_gynecologic,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_other,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_pulmonary,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_renal_UTI_including_bladder,KEPT,MODELLING_COLS,True,False,<1%
+dx_Sepsis_unknown,KEPT,MODELLING_COLS,True,False,<1%
+heartrate_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+meanbp_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+respiratoryrate_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+temperature_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+pf_ratio_miss,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,binary_indicator
+wbc_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+creatinine_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+bilirubin_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+bun_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+glucose_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+sodium_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+ph_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+hematocrit_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+albumin_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+gcs_total_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+potassium_max_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+platelets_min_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+lactate_max_miss,KEPT,MODELLING_COLS + GP_TERMINAL,True,True,binary_indicator
+map_mean_miss,KEPT,MODELLING_COLS,True,False,binary_indicator
+gender_male_miss,KEPT,MODELLING_COLS,True,False,binary_indicator

@@ -1,0 +1,11 @@
+feature,gp_structural_rank,gp_tier,rf_shap_rank,rank_diff
+bun,1,Outer numerator ratio,2,1
+pf_ratio,2,Outer denominator ratio,5,3
+lactate_max,3,sqrt() metabolic term,1,-2
+vent,4,"max(vent, intubated)",13,9
+intubated,5,"max(vent, intubated)",17,12
+platelets_min,6,"min(platelets, MAP)",7,1
+map_mean,7,"min(platelets, MAP)",6,-1
+age_numeric,8,Age denominator,3,-5
+temperature,9,Linear thermal term,4,-5
+bilirubin,10,Linear hepatic term,15,5

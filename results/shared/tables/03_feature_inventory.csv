@@ -1,0 +1,70 @@
+feature,source,type
+age_numeric,APACHE APS,continuous
+heartrate,APACHE APS,continuous
+meanbp,APACHE APS,continuous
+respiratoryrate,APACHE APS,continuous
+temperature,APACHE APS,continuous
+pf_ratio,APACHE APS,continuous
+pao2,APACHE APS,continuous
+fio2_frac,APACHE APS,continuous
+wbc,APACHE APS,continuous
+creatinine,APACHE APS,continuous
+bilirubin,APACHE APS,continuous
+bun,APACHE APS,continuous
+glucose,APACHE APS,continuous
+sodium,APACHE APS,continuous
+ph,APACHE APS,continuous
+hematocrit,APACHE APS,continuous
+albumin,APACHE APS,continuous
+gcs_total,APACHE APS,continuous
+potassium_max,lab.csv.gz,continuous
+platelets_min,lab.csv.gz,continuous
+lactate_max,lab.csv.gz,continuous
+map_min,vitalAperiodic,continuous
+map_max,vitalAperiodic,continuous
+map_mean,vitalAperiodic,continuous
+gender_male,patient table,binary
+vent,APACHE APS,binary
+intubated,APACHE APS,binary
+dialysis,APACHE APS,binary
+vasopressor_24h,infusionDrug,binary
+unit_CSICU,one-hot,binary
+unit_CTICU,one-hot,binary
+unit_Cardiac ICU,one-hot,binary
+unit_MICU,one-hot,binary
+unit_Med-Surg ICU,one-hot,binary
+unit_Neuro ICU,one-hot,binary
+unit_SICU,one-hot,binary
+dx_Sepsis_cutaneous_soft_tissue,one-hot,binary
+dx_Sepsis_gynecologic,one-hot,binary
+dx_Sepsis_other,one-hot,binary
+dx_Sepsis_pulmonary,one-hot,binary
+dx_Sepsis_renal_UTI_including_bladder,one-hot,binary
+dx_Sepsis_unknown,one-hot,binary
+heartrate_miss,miss indicator,binary
+meanbp_miss,miss indicator,binary
+respiratoryrate_miss,miss indicator,binary
+temperature_miss,miss indicator,binary
+fio2_frac_miss,miss indicator,binary
+pao2_miss,miss indicator,binary
+pf_ratio_miss,miss indicator,binary
+wbc_miss,miss indicator,binary
+creatinine_miss,miss indicator,binary
+bilirubin_miss,miss indicator,binary
+bun_miss,miss indicator,binary
+glucose_miss,miss indicator,binary
+sodium_miss,miss indicator,binary
+ph_miss,miss indicator,binary
+hematocrit_miss,miss indicator,binary
+albumin_miss,miss indicator,binary
+gcs_total_miss,miss indicator,binary
+eyes_miss,miss indicator,binary
+motor_miss,miss indicator,binary
+verbal_miss,miss indicator,binary
+potassium_max_miss,miss indicator,binary
+platelets_min_miss,miss indicator,binary
+lactate_max_miss,miss indicator,binary
+map_min_miss,miss indicator,binary
+map_max_miss,miss indicator,binary
+map_mean_miss,miss indicator,binary
+gender_male_miss,miss indicator,binary

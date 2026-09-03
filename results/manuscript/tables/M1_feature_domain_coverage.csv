@@ -1,0 +1,18 @@
+shap_rank,feature,clinical_domain,gp_status,note
+1,lactate_max,Metabolic,Included,
+2,bun,Renal,Included,
+3,age_numeric,Demographic,Included,
+4,temperature,Thermal/Inflammatory,Included,
+5,pf_ratio,Respiratory,Included,
+6,map_mean,Hemodynamic,Included,
+7,platelets_min,Hematologic/Coagulation,Included,
+8,albumin,Nutritional/Hepatic,Intentionally excluded,"Excluded from GP terminal candidate pool a priori: 39.6% missingness, imputed at constant median (would let GP fit an imputation artefact, not signal). See feature_importance.csv justification field (NB09/B6)."
+9,heartrate,Hemodynamic,Clinically redundant,Hemodynamic domain already covered by map_mean; heartrate's marginal signal is largely captured jointly with MAP + lactate_max + vent in the evolved expression.
+10,potassium_max,Renal/Electrolyte,Genuinely absent,"Hyperkalemia is a real sepsis severity marker; independent contribution beyond renal (bun) and organ-failure (lactate_max, pf_ratio) terms appears small but is not fully explained away."
+11,creatinine,Renal,Clinically redundant,"Renal domain covered by bun; bun and creatinine are highly correlated renal markers, and bun additionally reflects catabolism/hydration status, which GP preferred."
+12,respiratoryrate,Respiratory,Clinically redundant,Respiratory domain already covered by pf_ratio + vent + intubated; respiratoryrate's marginal signal is largely redundant with the ventilation-status terms.
+13,vent,Respiratory/Neurologic,Included,
+14,gcs_total,Neurologic,Clinically redundant,"Neurologic domain proxied by vent/intubated: patients with severely depressed consciousness are typically ventilated, so ventilation status partially substitutes for a direct GCS term."
+15,bilirubin,Hepatic,Included,
+16,pf_ratio_miss,Respiratory (MNAR indicator),Genuinely absent,"MNAR missingness indicator for PF ratio; the underlying physiological signal is still captured via pf_ratio + vent/intubated, but the missingness-pattern signal itself is not separately modelled."
+17,intubated,Respiratory/Neurologic,Included,

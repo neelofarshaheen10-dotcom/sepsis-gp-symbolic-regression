@@ -1,0 +1,17 @@
+variable,category,value
+Age (years),mean (SD),63.1 (17.2)
+Age (years),median [IQR],65 [53-76]
+Age (years),>= 90 (anonymised),"7,081 (3.5%)"
+Age (years),missing,95
+Gender,Male,"108,379 (54.0%)"
+Gender,Female,"92,303 (46.0%)"
+Gender,missing,134 (0.1%)
+Gender,Unknown,35 (0.0%)
+Gender,Other,8 (0.0%)
+Ethnicity,Caucasian,"155,285 (77.3%)"
+Ethnicity,African American,"21,308 (10.6%)"
+Ethnicity,Other/Unknown,"9,542 (4.8%)"
+Ethnicity,Hispanic,"7,464 (3.7%)"
+Ethnicity,Asian,"3,270 (1.6%)"
+Ethnicity,missing,"2,290 (1.1%)"
+Ethnicity,Native American,"1,700 (0.8%)"

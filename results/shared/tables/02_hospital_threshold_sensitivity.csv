@@ -1,0 +1,5 @@
+threshold_label,min_stays,min_deaths,n_hospitals,n_patients,event_rate,event_rate_pct,selected
+">=50 stays & >=5 deaths",50,5,92,12981,0.1652,16.52,False
+">=75 stays & >=8 deaths",75,8,65,11164,0.1688,16.88,True
+">=100 stays & >=10 deaths",100,10,51,9947,0.1680,16.80,False
+">=200 stays & >=20 deaths",200,20,19,5431,0.1630,16.30,False

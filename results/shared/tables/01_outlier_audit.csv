@@ -1,0 +1,4 @@
+column,label,n_nonmissing,q1,q3,iqr,lower_fence,upper_fence,n_below_fence,n_above_fence,n_total_outliers,pct_outliers
+age_numeric,Age (years; 90 = anonymised >= 90),200764,53.0,76.0,23.0,18.5,110.5,1062,0,1062,0.53
+admissionheight,Height at admission (cm),196644,162.5,177.8,15.3,139.55,200.75,1298,170,1468,0.75
+admissionweight,Weight at admission (kg),184141,66.1,97.0,30.9,19.75,143.35,120,5287,5407,2.94
