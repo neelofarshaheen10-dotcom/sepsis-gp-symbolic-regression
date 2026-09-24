@@ -1,0 +1,34 @@
+{
+  "title": "sepsis-gp-symbolic-regression: Calibration-aware symbolic regression for interpretable sepsis mortality prediction under hospital shift",
+  "description": "Code and reproducibility materials for the manuscript submitted to Artificial Intelligence in Medicine. A genetic-programming symbolic regression formula for sepsis mortality prediction is evolved with a calibration-aware objective and evaluated for discrimination and calibration transfer across eICU-CRD and MIMIC-IV, including a directional hospital-mortality tertile shift analysis.",
+  "creators": [
+    {
+      "name": "Shaheen, Neelofar",
+      "affiliation": "Whitecliffe, New Zealand"
+    },
+    {
+      "name": "Dang, Binh Thanh",
+      "affiliation": "Whitecliffe, New Zealand"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "symbolic regression",
+    "genetic programming",
+    "sepsis",
+    "calibration",
+    "clinical prediction",
+    "PySR",
+    "eICU-CRD",
+    "MIMIC-IV"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/neelofarshaheen10-dotcom/sepsis-gp-symbolic-regression",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
